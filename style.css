@@ -1,0 +1,99 @@
+body {
+  background-color: #f08080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container {
+  background-color: #f4978e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 370px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fbc4ab;
+}
+
+body.dark-mode input[type="text"] {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #555;
+}
+
+p.instructions {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.result p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+audio {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.loading {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#themeToggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body.dark-mode #themeToggle {
+  background: #333;
+  color: #fff;
+  border: 1px solid #888;
+}
